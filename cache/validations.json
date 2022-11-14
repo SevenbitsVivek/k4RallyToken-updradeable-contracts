@@ -1,0 +1,3571 @@
+{
+  "version": "3.2",
+  "log": [
+    {
+      "AccessControlUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\access\\AccessControlUpgradeable.sol:50",
+        "inherit": [
+          "ERC165Upgradeable",
+          "IERC165Upgradeable",
+          "IAccessControlUpgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [
+          "StringsUpgradeable"
+        ],
+        "methods": [
+          "supportsInterface(bytes4)",
+          "hasRole(bytes32,address)",
+          "getRoleAdmin(bytes32)",
+          "grantRole(bytes32,address)",
+          "revokeRole(bytes32,address)",
+          "renounceRole(bytes32,address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ContextUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "51",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ERC165Upgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\introspection\\ERC165Upgradeable.sol:41"
+            },
+            {
+              "label": "_roles",
+              "offset": 0,
+              "slot": "101",
+              "type": "t_mapping(t_bytes32,t_struct(RoleData)34_storage)",
+              "contract": "AccessControlUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\AccessControlUpgradeable.sol:61"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "102",
+              "type": "t_array(t_uint256)49_storage",
+              "contract": "AccessControlUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\AccessControlUpgradeable.sol:247"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]",
+              "numberOfBytes": "1568"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_struct(RoleData)34_storage)": {
+              "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(RoleData)34_storage": {
+              "label": "struct AccessControlUpgradeable.RoleData",
+              "members": [
+                {
+                  "label": "members",
+                  "type": "t_mapping(t_address,t_bool)",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "adminRole",
+                  "type": "t_bytes32",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "IAccessControlUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\access\\IAccessControlUpgradeable.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "hasRole(bytes32,address)",
+          "getRoleAdmin(bytes32)",
+          "grantRole(bytes32,address)",
+          "revokeRole(bytes32,address)",
+          "renounceRole(bytes32,address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Initializable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:57",
+        "inherit": [],
+        "libraries": [
+          "AddressUpgradeable"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "AddressUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\utils\\AddressUpgradeable.sol:9",
+        "version": {
+          "withMetadata": "4127d24d1445f91b5c12c7b41f8fc2eb7bdae8d69928046c031ba4b39a6988c2",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ContextUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:17",
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ContextUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "StringsUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\utils\\StringsUpgradeable.sol:9",
+        "version": {
+          "withMetadata": "6ed16fdd5b4e223b1cebb83432a53652b224a9127fdd94ff7c012118a8437901",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERC165Upgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\utils\\introspection\\ERC165Upgradeable.sol:23",
+        "inherit": [
+          "IERC165Upgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ERC165Upgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\introspection\\ERC165Upgradeable.sol:41"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "IERC165Upgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\utils\\introspection\\IERC165Upgradeable.sol:15",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERC20Upgradeable": {
+        "src": "contracts\\K4RallyTokenV2.sol:395",
+        "version": {
+          "withMetadata": "ac1606baa28431d0daf3a6e9585846bddaf44731df95aba0a310a32294053864",
+          "withoutMetadata": "4faca30467a0f79b0ab0ed3602269fb369736e3911013f15e06b35408afbc5dc",
+          "linkedWithoutMetadata": "4faca30467a0f79b0ab0ed3602269fb369736e3911013f15e06b35408afbc5dc"
+        },
+        "inherit": [
+          "IERC20MetadataUpgradeable",
+          "IERC20Upgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "decimals()",
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "increaseAllowance(address,uint256)",
+          "decreaseAllowance(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ContextUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+            },
+            {
+              "label": "_balances",
+              "offset": 0,
+              "slot": "51",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:396"
+            },
+            {
+              "label": "_allowances",
+              "offset": 0,
+              "slot": "52",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:398"
+            },
+            {
+              "label": "_totalSupply",
+              "offset": 0,
+              "slot": "53",
+              "type": "t_uint256",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:400"
+            },
+            {
+              "label": "_name",
+              "offset": 0,
+              "slot": "54",
+              "type": "t_string_storage",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:402"
+            },
+            {
+              "label": "_symbol",
+              "offset": 0,
+              "slot": "55",
+              "type": "t_string_storage",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:403"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "56",
+              "type": "t_array(t_uint256)45_storage",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:721"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)45_storage": {
+              "label": "uint256[45]",
+              "numberOfBytes": "1440"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "IERC20MetadataUpgradeable": {
+        "src": "contracts\\K4RallyTokenV2.sol:342",
+        "inherit": [
+          "IERC20Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "decimals()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IERC20Upgradeable": {
+        "src": "contracts\\K4RallyTokenV2.sol:254",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "K4RallyTokenV1": {
+        "src": "contracts\\K4RallyTokenV1.sol:1190",
+        "version": {
+          "withMetadata": "1a06c6bf714313c63d0c54cac13aac37e454d5e87a2777c2804c38410e5c573b",
+          "withoutMetadata": "557021d1cb94d781f846c14e2536274f881c6beb4589431cb1c109f20b4915e5",
+          "linkedWithoutMetadata": "557021d1cb94d781f846c14e2536274f881c6beb4589431cb1c109f20b4915e5"
+        },
+        "inherit": [
+          "OwnableUpgradeable",
+          "PausableUpgradeable",
+          "PolsStake",
+          "AccessControlUpgradeable",
+          "ERC165Upgradeable",
+          "IERC165Upgradeable",
+          "IAccessControlUpgradeable",
+          "ERC20Upgradeable",
+          "IERC20MetadataUpgradeable",
+          "IERC20Upgradeable",
+          "ContextUpgradeable",
+          "ReentrancyGuard",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "()",
+          "initialize(address,uint48)",
+          "pause()",
+          "unpause()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+            },
+            {
+              "label": "_status",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "ReentrancyGuard",
+              "src": "contracts\\K4RallyTokenV1.sol:762"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ContextUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+            },
+            {
+              "label": "_balances",
+              "offset": 0,
+              "slot": "52",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV1.sol:396"
+            },
+            {
+              "label": "_allowances",
+              "offset": 0,
+              "slot": "53",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV1.sol:398"
+            },
+            {
+              "label": "_totalSupply",
+              "offset": 0,
+              "slot": "54",
+              "type": "t_uint256",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV1.sol:400"
+            },
+            {
+              "label": "_name",
+              "offset": 0,
+              "slot": "55",
+              "type": "t_string_storage",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV1.sol:402"
+            },
+            {
+              "label": "_symbol",
+              "offset": 0,
+              "slot": "56",
+              "type": "t_string_storage",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV1.sol:403"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "57",
+              "type": "t_array(t_uint256)45_storage",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV1.sol:721"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "102",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ERC165Upgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\introspection\\ERC165Upgradeable.sol:41"
+            },
+            {
+              "label": "_roles",
+              "offset": 0,
+              "slot": "152",
+              "type": "t_mapping(t_bytes32,t_struct(RoleData)34_storage)",
+              "contract": "AccessControlUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\AccessControlUpgradeable.sol:61"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "153",
+              "type": "t_array(t_uint256)49_storage",
+              "contract": "AccessControlUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\AccessControlUpgradeable.sol:247"
+            },
+            {
+              "label": "userMap",
+              "offset": 0,
+              "slot": "202",
+              "type": "t_mapping(t_address,t_struct(User)2146_storage)",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV1.sol:829"
+            },
+            {
+              "label": "tokenTotalStaked",
+              "offset": 0,
+              "slot": "203",
+              "type": "t_uint256",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV1.sol:831"
+            },
+            {
+              "label": "stakingToken",
+              "offset": 0,
+              "slot": "204",
+              "type": "t_address",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV1.sol:833"
+            },
+            {
+              "label": "rewardToken",
+              "offset": 0,
+              "slot": "205",
+              "type": "t_address",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV1.sol:834"
+            },
+            {
+              "label": "lockTimePeriod",
+              "offset": 20,
+              "slot": "205",
+              "type": "t_uint48",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV1.sol:846"
+            },
+            {
+              "label": "stakeRewardEndTime",
+              "offset": 26,
+              "slot": "205",
+              "type": "t_uint48",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV1.sol:847"
+            },
+            {
+              "label": "stakeRewardFactor",
+              "offset": 0,
+              "slot": "206",
+              "type": "t_uint256",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV1.sol:848"
+            },
+            {
+              "label": "_paused",
+              "offset": 0,
+              "slot": "207",
+              "type": "t_bool",
+              "contract": "PausableUpgradeable",
+              "src": "contracts\\K4RallyTokenV1.sol:173"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "208",
+              "type": "t_array(t_uint256)49_storage",
+              "contract": "PausableUpgradeable",
+              "src": "contracts\\K4RallyTokenV1.sol:241"
+            },
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "257",
+              "type": "t_address",
+              "contract": "OwnableUpgradeable",
+              "src": "contracts\\K4RallyTokenV1.sol:81"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "258",
+              "type": "t_array(t_uint256)49_storage",
+              "contract": "OwnableUpgradeable",
+              "src": "contracts\\K4RallyTokenV1.sol:141"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)45_storage": {
+              "label": "uint256[45]",
+              "numberOfBytes": "1440"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]",
+              "numberOfBytes": "1568"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_struct(User)2146_storage)": {
+              "label": "mapping(address => struct PolsStake.User)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_struct(RoleData)34_storage)": {
+              "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_struct(RoleData)34_storage": {
+              "label": "struct AccessControlUpgradeable.RoleData",
+              "members": [
+                {
+                  "label": "members",
+                  "type": "t_mapping(t_address,t_bool)",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "adminRole",
+                  "type": "t_bytes32",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(User)2146_storage": {
+              "label": "struct PolsStake.User",
+              "members": [
+                {
+                  "label": "stakeTime",
+                  "type": "t_uint48",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "unlockTime",
+                  "type": "t_uint48",
+                  "offset": 6,
+                  "slot": "0"
+                },
+                {
+                  "label": "stakeAmount",
+                  "type": "t_uint160",
+                  "offset": 12,
+                  "slot": "0"
+                },
+                {
+                  "label": "accumulatedRewards",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint160": {
+              "label": "uint160",
+              "numberOfBytes": "20"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint48": {
+              "label": "uint48",
+              "numberOfBytes": "6"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "OwnableUpgradeable": {
+        "src": "contracts\\K4RallyTokenV2.sol:80",
+        "inherit": [
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ContextUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+            },
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "51",
+              "type": "t_address",
+              "contract": "OwnableUpgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:81"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "52",
+              "type": "t_array(t_uint256)49_storage",
+              "contract": "OwnableUpgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:141"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]",
+              "numberOfBytes": "1568"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "PausableUpgradeable": {
+        "src": "contracts\\K4RallyTokenV2.sol:162",
+        "inherit": [
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "paused()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ContextUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+            },
+            {
+              "label": "_paused",
+              "offset": 0,
+              "slot": "51",
+              "type": "t_bool",
+              "contract": "PausableUpgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:173"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "52",
+              "type": "t_array(t_uint256)49_storage",
+              "contract": "PausableUpgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:241"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]",
+              "numberOfBytes": "1568"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "PolsStake": {
+        "src": "contracts\\K4RallyTokenV2.sol:804",
+        "version": {
+          "withMetadata": "afebe76d0a084c317503a16a19ad50afa2d5d8d0fad275db2cf17153b028ea68",
+          "withoutMetadata": "533debda52ba1db706d2ed3bdbcf75bfc70f44563ce0bdc08a944205cead6418",
+          "linkedWithoutMetadata": "533debda52ba1db706d2ed3bdbcf75bfc70f44563ce0bdc08a944205cead6418"
+        },
+        "inherit": [
+          "AccessControlUpgradeable",
+          "ERC165Upgradeable",
+          "IERC165Upgradeable",
+          "IAccessControlUpgradeable",
+          "ERC20Upgradeable",
+          "IERC20MetadataUpgradeable",
+          "IERC20Upgradeable",
+          "ContextUpgradeable",
+          "ReentrancyGuard",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "stakeTime(address)",
+          "stakeAmount(address)",
+          "balanceOf(address)",
+          "userAccumulatedRewards(address)",
+          "getUnlockTime(address)",
+          "getRewardTokenBalance()",
+          "setRewardToken(address)",
+          "setLockTimePeriod(uint48)",
+          "setStakeRewardFactor(uint256)",
+          "setStakeRewardEndTime(uint48)",
+          "burnRewards(address,uint256)",
+          "stakeAmount_msgSender()",
+          "stakeTime_msgSender()",
+          "getUnlockTime_msgSender()",
+          "userClaimableRewards_msgSender()",
+          "userAccumulatedRewards_msgSender()",
+          "userTotalRewards_msgSender()",
+          "getEarnedRewardTokens_msgSender()",
+          "userClaimableRewards(address)",
+          "userTotalRewards(address)",
+          "getEarnedRewardTokens(address)",
+          "stake(uint256)",
+          "claim()",
+          "withdraw(uint256)",
+          "withdrawAll()",
+          "removeOtherERC20Tokens(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+            },
+            {
+              "label": "_status",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "ReentrancyGuard",
+              "src": "contracts\\K4RallyTokenV2.sol:762"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ContextUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+            },
+            {
+              "label": "_balances",
+              "offset": 0,
+              "slot": "52",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:396"
+            },
+            {
+              "label": "_allowances",
+              "offset": 0,
+              "slot": "53",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:398"
+            },
+            {
+              "label": "_totalSupply",
+              "offset": 0,
+              "slot": "54",
+              "type": "t_uint256",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:400"
+            },
+            {
+              "label": "_name",
+              "offset": 0,
+              "slot": "55",
+              "type": "t_string_storage",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:402"
+            },
+            {
+              "label": "_symbol",
+              "offset": 0,
+              "slot": "56",
+              "type": "t_string_storage",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:403"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "57",
+              "type": "t_array(t_uint256)45_storage",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:721"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "102",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ERC165Upgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\introspection\\ERC165Upgradeable.sol:41"
+            },
+            {
+              "label": "_roles",
+              "offset": 0,
+              "slot": "152",
+              "type": "t_mapping(t_bytes32,t_struct(RoleData)34_storage)",
+              "contract": "AccessControlUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\AccessControlUpgradeable.sol:61"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "153",
+              "type": "t_array(t_uint256)49_storage",
+              "contract": "AccessControlUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\AccessControlUpgradeable.sol:247"
+            },
+            {
+              "label": "userMap",
+              "offset": 0,
+              "slot": "202",
+              "type": "t_mapping(t_address,t_struct(User)4184_storage)",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:829"
+            },
+            {
+              "label": "tokenTotalStaked",
+              "offset": 0,
+              "slot": "203",
+              "type": "t_uint256",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:831"
+            },
+            {
+              "label": "stakingToken",
+              "offset": 0,
+              "slot": "204",
+              "type": "t_address",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:833"
+            },
+            {
+              "label": "rewardToken",
+              "offset": 0,
+              "slot": "205",
+              "type": "t_address",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:834"
+            },
+            {
+              "label": "lockTimePeriod",
+              "offset": 20,
+              "slot": "205",
+              "type": "t_uint48",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:846"
+            },
+            {
+              "label": "stakeRewardEndTime",
+              "offset": 26,
+              "slot": "205",
+              "type": "t_uint48",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:847"
+            },
+            {
+              "label": "stakeRewardFactor",
+              "offset": 0,
+              "slot": "206",
+              "type": "t_uint256",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:848"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)45_storage": {
+              "label": "uint256[45]",
+              "numberOfBytes": "1440"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]",
+              "numberOfBytes": "1568"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_struct(User)4184_storage)": {
+              "label": "mapping(address => struct PolsStake.User)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_struct(RoleData)34_storage)": {
+              "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_struct(RoleData)34_storage": {
+              "label": "struct AccessControlUpgradeable.RoleData",
+              "members": [
+                {
+                  "label": "members",
+                  "type": "t_mapping(t_address,t_bool)",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "adminRole",
+                  "type": "t_bytes32",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(User)4184_storage": {
+              "label": "struct PolsStake.User",
+              "members": [
+                {
+                  "label": "stakeTime",
+                  "type": "t_uint48",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "unlockTime",
+                  "type": "t_uint48",
+                  "offset": 6,
+                  "slot": "0"
+                },
+                {
+                  "label": "stakeAmount",
+                  "type": "t_uint160",
+                  "offset": 12,
+                  "slot": "0"
+                },
+                {
+                  "label": "accumulatedRewards",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint160": {
+              "label": "uint160",
+              "numberOfBytes": "20"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint48": {
+              "label": "uint48",
+              "numberOfBytes": "6"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "ReentrancyGuard": {
+        "src": "contracts\\K4RallyTokenV2.sol:747",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_status",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "ReentrancyGuard",
+              "src": "contracts\\K4RallyTokenV2.sol:762"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "K4RallyTokenV2": {
+        "src": "contracts\\K4RallyTokenV2.sol:1190",
+        "version": {
+          "withMetadata": "9d0ec85c265c6a92b8504bbe9d5ed02be4cc593a2acb70a12dcde594d82e9f9a",
+          "withoutMetadata": "015bd5767cea2e978fc77a4ce9c8e049188897b1ea2cfe5dc122ef10deac667b",
+          "linkedWithoutMetadata": "015bd5767cea2e978fc77a4ce9c8e049188897b1ea2cfe5dc122ef10deac667b"
+        },
+        "inherit": [
+          "OwnableUpgradeable",
+          "PausableUpgradeable",
+          "PolsStake",
+          "AccessControlUpgradeable",
+          "ERC165Upgradeable",
+          "IERC165Upgradeable",
+          "IAccessControlUpgradeable",
+          "ERC20Upgradeable",
+          "IERC20MetadataUpgradeable",
+          "IERC20Upgradeable",
+          "ContextUpgradeable",
+          "ReentrancyGuard",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "()",
+          "initialize(address,uint48)",
+          "pause()",
+          "unpause()",
+          "burn(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+            },
+            {
+              "label": "_status",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "ReentrancyGuard",
+              "src": "contracts\\K4RallyTokenV2.sol:762"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ContextUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+            },
+            {
+              "label": "_balances",
+              "offset": 0,
+              "slot": "52",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:396"
+            },
+            {
+              "label": "_allowances",
+              "offset": 0,
+              "slot": "53",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:398"
+            },
+            {
+              "label": "_totalSupply",
+              "offset": 0,
+              "slot": "54",
+              "type": "t_uint256",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:400"
+            },
+            {
+              "label": "_name",
+              "offset": 0,
+              "slot": "55",
+              "type": "t_string_storage",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:402"
+            },
+            {
+              "label": "_symbol",
+              "offset": 0,
+              "slot": "56",
+              "type": "t_string_storage",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:403"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "57",
+              "type": "t_array(t_uint256)45_storage",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:721"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "102",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ERC165Upgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\introspection\\ERC165Upgradeable.sol:41"
+            },
+            {
+              "label": "_roles",
+              "offset": 0,
+              "slot": "152",
+              "type": "t_mapping(t_bytes32,t_struct(RoleData)34_storage)",
+              "contract": "AccessControlUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\AccessControlUpgradeable.sol:61"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "153",
+              "type": "t_array(t_uint256)49_storage",
+              "contract": "AccessControlUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\AccessControlUpgradeable.sol:247"
+            },
+            {
+              "label": "userMap",
+              "offset": 0,
+              "slot": "202",
+              "type": "t_mapping(t_address,t_struct(User)4184_storage)",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:829"
+            },
+            {
+              "label": "tokenTotalStaked",
+              "offset": 0,
+              "slot": "203",
+              "type": "t_uint256",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:831"
+            },
+            {
+              "label": "stakingToken",
+              "offset": 0,
+              "slot": "204",
+              "type": "t_address",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:833"
+            },
+            {
+              "label": "rewardToken",
+              "offset": 0,
+              "slot": "205",
+              "type": "t_address",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:834"
+            },
+            {
+              "label": "lockTimePeriod",
+              "offset": 20,
+              "slot": "205",
+              "type": "t_uint48",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:846"
+            },
+            {
+              "label": "stakeRewardEndTime",
+              "offset": 26,
+              "slot": "205",
+              "type": "t_uint48",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:847"
+            },
+            {
+              "label": "stakeRewardFactor",
+              "offset": 0,
+              "slot": "206",
+              "type": "t_uint256",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:848"
+            },
+            {
+              "label": "_paused",
+              "offset": 0,
+              "slot": "207",
+              "type": "t_bool",
+              "contract": "PausableUpgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:173"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "208",
+              "type": "t_array(t_uint256)49_storage",
+              "contract": "PausableUpgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:241"
+            },
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "257",
+              "type": "t_address",
+              "contract": "OwnableUpgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:81"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "258",
+              "type": "t_array(t_uint256)49_storage",
+              "contract": "OwnableUpgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:141"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)45_storage": {
+              "label": "uint256[45]",
+              "numberOfBytes": "1440"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]",
+              "numberOfBytes": "1568"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_struct(User)4184_storage)": {
+              "label": "mapping(address => struct PolsStake.User)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_struct(RoleData)34_storage)": {
+              "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_struct(RoleData)34_storage": {
+              "label": "struct AccessControlUpgradeable.RoleData",
+              "members": [
+                {
+                  "label": "members",
+                  "type": "t_mapping(t_address,t_bool)",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "adminRole",
+                  "type": "t_bytes32",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(User)4184_storage": {
+              "label": "struct PolsStake.User",
+              "members": [
+                {
+                  "label": "stakeTime",
+                  "type": "t_uint48",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "unlockTime",
+                  "type": "t_uint48",
+                  "offset": 6,
+                  "slot": "0"
+                },
+                {
+                  "label": "stakeAmount",
+                  "type": "t_uint160",
+                  "offset": 12,
+                  "slot": "0"
+                },
+                {
+                  "label": "accumulatedRewards",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint160": {
+              "label": "uint160",
+              "numberOfBytes": "20"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint48": {
+              "label": "uint48",
+              "numberOfBytes": "6"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "AccessControlUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\access\\AccessControlUpgradeable.sol:50",
+        "inherit": [
+          "ERC165Upgradeable",
+          "IERC165Upgradeable",
+          "IAccessControlUpgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [
+          "StringsUpgradeable"
+        ],
+        "methods": [
+          "supportsInterface(bytes4)",
+          "hasRole(bytes32,address)",
+          "getRoleAdmin(bytes32)",
+          "grantRole(bytes32,address)",
+          "revokeRole(bytes32,address)",
+          "renounceRole(bytes32,address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ContextUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "51",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ERC165Upgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\introspection\\ERC165Upgradeable.sol:41"
+            },
+            {
+              "label": "_roles",
+              "offset": 0,
+              "slot": "101",
+              "type": "t_mapping(t_bytes32,t_struct(RoleData)34_storage)",
+              "contract": "AccessControlUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\AccessControlUpgradeable.sol:61"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "102",
+              "type": "t_array(t_uint256)49_storage",
+              "contract": "AccessControlUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\AccessControlUpgradeable.sol:247"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]",
+              "numberOfBytes": "1568"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_struct(RoleData)34_storage)": {
+              "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(RoleData)34_storage": {
+              "label": "struct AccessControlUpgradeable.RoleData",
+              "members": [
+                {
+                  "label": "members",
+                  "type": "t_mapping(t_address,t_bool)",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "adminRole",
+                  "type": "t_bytes32",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "IAccessControlUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\access\\IAccessControlUpgradeable.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "hasRole(bytes32,address)",
+          "getRoleAdmin(bytes32)",
+          "grantRole(bytes32,address)",
+          "revokeRole(bytes32,address)",
+          "renounceRole(bytes32,address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Initializable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:57",
+        "inherit": [],
+        "libraries": [
+          "AddressUpgradeable"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "AddressUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\utils\\AddressUpgradeable.sol:9",
+        "version": {
+          "withMetadata": "4127d24d1445f91b5c12c7b41f8fc2eb7bdae8d69928046c031ba4b39a6988c2",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ContextUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:17",
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ContextUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "StringsUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\utils\\StringsUpgradeable.sol:9",
+        "version": {
+          "withMetadata": "6ed16fdd5b4e223b1cebb83432a53652b224a9127fdd94ff7c012118a8437901",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERC165Upgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\utils\\introspection\\ERC165Upgradeable.sol:23",
+        "inherit": [
+          "IERC165Upgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ERC165Upgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\introspection\\ERC165Upgradeable.sol:41"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "IERC165Upgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\utils\\introspection\\IERC165Upgradeable.sol:15",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERC20Upgradeable": {
+        "src": "contracts\\K4RallyTokenV2.sol:395",
+        "version": {
+          "withMetadata": "ac1606baa28431d0daf3a6e9585846bddaf44731df95aba0a310a32294053864",
+          "withoutMetadata": "4faca30467a0f79b0ab0ed3602269fb369736e3911013f15e06b35408afbc5dc",
+          "linkedWithoutMetadata": "4faca30467a0f79b0ab0ed3602269fb369736e3911013f15e06b35408afbc5dc"
+        },
+        "inherit": [
+          "IERC20MetadataUpgradeable",
+          "IERC20Upgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "decimals()",
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "increaseAllowance(address,uint256)",
+          "decreaseAllowance(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ContextUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+            },
+            {
+              "label": "_balances",
+              "offset": 0,
+              "slot": "51",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:396"
+            },
+            {
+              "label": "_allowances",
+              "offset": 0,
+              "slot": "52",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:398"
+            },
+            {
+              "label": "_totalSupply",
+              "offset": 0,
+              "slot": "53",
+              "type": "t_uint256",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:400"
+            },
+            {
+              "label": "_name",
+              "offset": 0,
+              "slot": "54",
+              "type": "t_string_storage",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:402"
+            },
+            {
+              "label": "_symbol",
+              "offset": 0,
+              "slot": "55",
+              "type": "t_string_storage",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:403"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "56",
+              "type": "t_array(t_uint256)45_storage",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:721"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)45_storage": {
+              "label": "uint256[45]",
+              "numberOfBytes": "1440"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "IERC20MetadataUpgradeable": {
+        "src": "contracts\\K4RallyTokenV2.sol:342",
+        "inherit": [
+          "IERC20Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "decimals()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IERC20Upgradeable": {
+        "src": "contracts\\K4RallyTokenV2.sol:254",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "K4RallyTokenV1": {
+        "src": "contracts\\K4RallyTokenV1.sol:1190",
+        "version": {
+          "withMetadata": "1a06c6bf714313c63d0c54cac13aac37e454d5e87a2777c2804c38410e5c573b",
+          "withoutMetadata": "557021d1cb94d781f846c14e2536274f881c6beb4589431cb1c109f20b4915e5",
+          "linkedWithoutMetadata": "557021d1cb94d781f846c14e2536274f881c6beb4589431cb1c109f20b4915e5"
+        },
+        "inherit": [
+          "OwnableUpgradeable",
+          "PausableUpgradeable",
+          "PolsStake",
+          "AccessControlUpgradeable",
+          "ERC165Upgradeable",
+          "IERC165Upgradeable",
+          "IAccessControlUpgradeable",
+          "ERC20Upgradeable",
+          "IERC20MetadataUpgradeable",
+          "IERC20Upgradeable",
+          "ContextUpgradeable",
+          "ReentrancyGuard",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "()",
+          "initialize(address,uint48)",
+          "pause()",
+          "unpause()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+            },
+            {
+              "label": "_status",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "ReentrancyGuard",
+              "src": "contracts\\K4RallyTokenV1.sol:762"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ContextUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+            },
+            {
+              "label": "_balances",
+              "offset": 0,
+              "slot": "52",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV1.sol:396"
+            },
+            {
+              "label": "_allowances",
+              "offset": 0,
+              "slot": "53",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV1.sol:398"
+            },
+            {
+              "label": "_totalSupply",
+              "offset": 0,
+              "slot": "54",
+              "type": "t_uint256",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV1.sol:400"
+            },
+            {
+              "label": "_name",
+              "offset": 0,
+              "slot": "55",
+              "type": "t_string_storage",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV1.sol:402"
+            },
+            {
+              "label": "_symbol",
+              "offset": 0,
+              "slot": "56",
+              "type": "t_string_storage",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV1.sol:403"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "57",
+              "type": "t_array(t_uint256)45_storage",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV1.sol:721"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "102",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ERC165Upgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\introspection\\ERC165Upgradeable.sol:41"
+            },
+            {
+              "label": "_roles",
+              "offset": 0,
+              "slot": "152",
+              "type": "t_mapping(t_bytes32,t_struct(RoleData)34_storage)",
+              "contract": "AccessControlUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\AccessControlUpgradeable.sol:61"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "153",
+              "type": "t_array(t_uint256)49_storage",
+              "contract": "AccessControlUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\AccessControlUpgradeable.sol:247"
+            },
+            {
+              "label": "userMap",
+              "offset": 0,
+              "slot": "202",
+              "type": "t_mapping(t_address,t_struct(User)2146_storage)",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV1.sol:829"
+            },
+            {
+              "label": "tokenTotalStaked",
+              "offset": 0,
+              "slot": "203",
+              "type": "t_uint256",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV1.sol:831"
+            },
+            {
+              "label": "stakingToken",
+              "offset": 0,
+              "slot": "204",
+              "type": "t_address",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV1.sol:833"
+            },
+            {
+              "label": "rewardToken",
+              "offset": 0,
+              "slot": "205",
+              "type": "t_address",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV1.sol:834"
+            },
+            {
+              "label": "lockTimePeriod",
+              "offset": 20,
+              "slot": "205",
+              "type": "t_uint48",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV1.sol:846"
+            },
+            {
+              "label": "stakeRewardEndTime",
+              "offset": 26,
+              "slot": "205",
+              "type": "t_uint48",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV1.sol:847"
+            },
+            {
+              "label": "stakeRewardFactor",
+              "offset": 0,
+              "slot": "206",
+              "type": "t_uint256",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV1.sol:848"
+            },
+            {
+              "label": "_paused",
+              "offset": 0,
+              "slot": "207",
+              "type": "t_bool",
+              "contract": "PausableUpgradeable",
+              "src": "contracts\\K4RallyTokenV1.sol:173"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "208",
+              "type": "t_array(t_uint256)49_storage",
+              "contract": "PausableUpgradeable",
+              "src": "contracts\\K4RallyTokenV1.sol:241"
+            },
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "257",
+              "type": "t_address",
+              "contract": "OwnableUpgradeable",
+              "src": "contracts\\K4RallyTokenV1.sol:81"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "258",
+              "type": "t_array(t_uint256)49_storage",
+              "contract": "OwnableUpgradeable",
+              "src": "contracts\\K4RallyTokenV1.sol:141"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)45_storage": {
+              "label": "uint256[45]",
+              "numberOfBytes": "1440"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]",
+              "numberOfBytes": "1568"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_struct(User)2146_storage)": {
+              "label": "mapping(address => struct PolsStake.User)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_struct(RoleData)34_storage)": {
+              "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_struct(RoleData)34_storage": {
+              "label": "struct AccessControlUpgradeable.RoleData",
+              "members": [
+                {
+                  "label": "members",
+                  "type": "t_mapping(t_address,t_bool)",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "adminRole",
+                  "type": "t_bytes32",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(User)2146_storage": {
+              "label": "struct PolsStake.User",
+              "members": [
+                {
+                  "label": "stakeTime",
+                  "type": "t_uint48",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "unlockTime",
+                  "type": "t_uint48",
+                  "offset": 6,
+                  "slot": "0"
+                },
+                {
+                  "label": "stakeAmount",
+                  "type": "t_uint160",
+                  "offset": 12,
+                  "slot": "0"
+                },
+                {
+                  "label": "accumulatedRewards",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint160": {
+              "label": "uint160",
+              "numberOfBytes": "20"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint48": {
+              "label": "uint48",
+              "numberOfBytes": "6"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "OwnableUpgradeable": {
+        "src": "contracts\\K4RallyTokenV2.sol:80",
+        "inherit": [
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ContextUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+            },
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "51",
+              "type": "t_address",
+              "contract": "OwnableUpgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:81"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "52",
+              "type": "t_array(t_uint256)49_storage",
+              "contract": "OwnableUpgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:141"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]",
+              "numberOfBytes": "1568"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "PausableUpgradeable": {
+        "src": "contracts\\K4RallyTokenV2.sol:162",
+        "inherit": [
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "paused()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ContextUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+            },
+            {
+              "label": "_paused",
+              "offset": 0,
+              "slot": "51",
+              "type": "t_bool",
+              "contract": "PausableUpgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:173"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "52",
+              "type": "t_array(t_uint256)49_storage",
+              "contract": "PausableUpgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:241"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]",
+              "numberOfBytes": "1568"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "PolsStake": {
+        "src": "contracts\\K4RallyTokenV2.sol:804",
+        "version": {
+          "withMetadata": "afebe76d0a084c317503a16a19ad50afa2d5d8d0fad275db2cf17153b028ea68",
+          "withoutMetadata": "533debda52ba1db706d2ed3bdbcf75bfc70f44563ce0bdc08a944205cead6418",
+          "linkedWithoutMetadata": "533debda52ba1db706d2ed3bdbcf75bfc70f44563ce0bdc08a944205cead6418"
+        },
+        "inherit": [
+          "AccessControlUpgradeable",
+          "ERC165Upgradeable",
+          "IERC165Upgradeable",
+          "IAccessControlUpgradeable",
+          "ERC20Upgradeable",
+          "IERC20MetadataUpgradeable",
+          "IERC20Upgradeable",
+          "ContextUpgradeable",
+          "ReentrancyGuard",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "stakeTime(address)",
+          "stakeAmount(address)",
+          "balanceOf(address)",
+          "userAccumulatedRewards(address)",
+          "getUnlockTime(address)",
+          "getRewardTokenBalance()",
+          "setRewardToken(address)",
+          "setLockTimePeriod(uint48)",
+          "setStakeRewardFactor(uint256)",
+          "setStakeRewardEndTime(uint48)",
+          "burnRewards(address,uint256)",
+          "stakeAmount_msgSender()",
+          "stakeTime_msgSender()",
+          "getUnlockTime_msgSender()",
+          "userClaimableRewards_msgSender()",
+          "userAccumulatedRewards_msgSender()",
+          "userTotalRewards_msgSender()",
+          "getEarnedRewardTokens_msgSender()",
+          "userClaimableRewards(address)",
+          "userTotalRewards(address)",
+          "getEarnedRewardTokens(address)",
+          "stake(uint256)",
+          "claim()",
+          "withdraw(uint256)",
+          "withdrawAll()",
+          "removeOtherERC20Tokens(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+            },
+            {
+              "label": "_status",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "ReentrancyGuard",
+              "src": "contracts\\K4RallyTokenV2.sol:762"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ContextUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+            },
+            {
+              "label": "_balances",
+              "offset": 0,
+              "slot": "52",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:396"
+            },
+            {
+              "label": "_allowances",
+              "offset": 0,
+              "slot": "53",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:398"
+            },
+            {
+              "label": "_totalSupply",
+              "offset": 0,
+              "slot": "54",
+              "type": "t_uint256",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:400"
+            },
+            {
+              "label": "_name",
+              "offset": 0,
+              "slot": "55",
+              "type": "t_string_storage",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:402"
+            },
+            {
+              "label": "_symbol",
+              "offset": 0,
+              "slot": "56",
+              "type": "t_string_storage",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:403"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "57",
+              "type": "t_array(t_uint256)45_storage",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:721"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "102",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ERC165Upgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\introspection\\ERC165Upgradeable.sol:41"
+            },
+            {
+              "label": "_roles",
+              "offset": 0,
+              "slot": "152",
+              "type": "t_mapping(t_bytes32,t_struct(RoleData)34_storage)",
+              "contract": "AccessControlUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\AccessControlUpgradeable.sol:61"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "153",
+              "type": "t_array(t_uint256)49_storage",
+              "contract": "AccessControlUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\AccessControlUpgradeable.sol:247"
+            },
+            {
+              "label": "userMap",
+              "offset": 0,
+              "slot": "202",
+              "type": "t_mapping(t_address,t_struct(User)4184_storage)",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:829"
+            },
+            {
+              "label": "tokenTotalStaked",
+              "offset": 0,
+              "slot": "203",
+              "type": "t_uint256",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:831"
+            },
+            {
+              "label": "stakingToken",
+              "offset": 0,
+              "slot": "204",
+              "type": "t_address",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:833"
+            },
+            {
+              "label": "rewardToken",
+              "offset": 0,
+              "slot": "205",
+              "type": "t_address",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:834"
+            },
+            {
+              "label": "lockTimePeriod",
+              "offset": 20,
+              "slot": "205",
+              "type": "t_uint48",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:846"
+            },
+            {
+              "label": "stakeRewardEndTime",
+              "offset": 26,
+              "slot": "205",
+              "type": "t_uint48",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:847"
+            },
+            {
+              "label": "stakeRewardFactor",
+              "offset": 0,
+              "slot": "206",
+              "type": "t_uint256",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:848"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)45_storage": {
+              "label": "uint256[45]",
+              "numberOfBytes": "1440"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]",
+              "numberOfBytes": "1568"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_struct(User)4184_storage)": {
+              "label": "mapping(address => struct PolsStake.User)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_struct(RoleData)34_storage)": {
+              "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_struct(RoleData)34_storage": {
+              "label": "struct AccessControlUpgradeable.RoleData",
+              "members": [
+                {
+                  "label": "members",
+                  "type": "t_mapping(t_address,t_bool)",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "adminRole",
+                  "type": "t_bytes32",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(User)4184_storage": {
+              "label": "struct PolsStake.User",
+              "members": [
+                {
+                  "label": "stakeTime",
+                  "type": "t_uint48",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "unlockTime",
+                  "type": "t_uint48",
+                  "offset": 6,
+                  "slot": "0"
+                },
+                {
+                  "label": "stakeAmount",
+                  "type": "t_uint160",
+                  "offset": 12,
+                  "slot": "0"
+                },
+                {
+                  "label": "accumulatedRewards",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint160": {
+              "label": "uint160",
+              "numberOfBytes": "20"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint48": {
+              "label": "uint48",
+              "numberOfBytes": "6"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "ReentrancyGuard": {
+        "src": "contracts\\K4RallyTokenV2.sol:747",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_status",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "ReentrancyGuard",
+              "src": "contracts\\K4RallyTokenV2.sol:762"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "K4RallyTokenV2": {
+        "src": "contracts\\K4RallyTokenV2.sol:1190",
+        "version": {
+          "withMetadata": "9d0ec85c265c6a92b8504bbe9d5ed02be4cc593a2acb70a12dcde594d82e9f9a",
+          "withoutMetadata": "015bd5767cea2e978fc77a4ce9c8e049188897b1ea2cfe5dc122ef10deac667b",
+          "linkedWithoutMetadata": "015bd5767cea2e978fc77a4ce9c8e049188897b1ea2cfe5dc122ef10deac667b"
+        },
+        "inherit": [
+          "OwnableUpgradeable",
+          "PausableUpgradeable",
+          "PolsStake",
+          "AccessControlUpgradeable",
+          "ERC165Upgradeable",
+          "IERC165Upgradeable",
+          "IAccessControlUpgradeable",
+          "ERC20Upgradeable",
+          "IERC20MetadataUpgradeable",
+          "IERC20Upgradeable",
+          "ContextUpgradeable",
+          "ReentrancyGuard",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "()",
+          "initialize(address,uint48)",
+          "pause()",
+          "unpause()",
+          "burn(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint8",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+              "retypedFrom": "bool"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+            },
+            {
+              "label": "_status",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "ReentrancyGuard",
+              "src": "contracts\\K4RallyTokenV2.sol:762"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ContextUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+            },
+            {
+              "label": "_balances",
+              "offset": 0,
+              "slot": "52",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:396"
+            },
+            {
+              "label": "_allowances",
+              "offset": 0,
+              "slot": "53",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:398"
+            },
+            {
+              "label": "_totalSupply",
+              "offset": 0,
+              "slot": "54",
+              "type": "t_uint256",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:400"
+            },
+            {
+              "label": "_name",
+              "offset": 0,
+              "slot": "55",
+              "type": "t_string_storage",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:402"
+            },
+            {
+              "label": "_symbol",
+              "offset": 0,
+              "slot": "56",
+              "type": "t_string_storage",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:403"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "57",
+              "type": "t_array(t_uint256)45_storage",
+              "contract": "ERC20Upgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:721"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "102",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ERC165Upgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\introspection\\ERC165Upgradeable.sol:41"
+            },
+            {
+              "label": "_roles",
+              "offset": 0,
+              "slot": "152",
+              "type": "t_mapping(t_bytes32,t_struct(RoleData)34_storage)",
+              "contract": "AccessControlUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\AccessControlUpgradeable.sol:61"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "153",
+              "type": "t_array(t_uint256)49_storage",
+              "contract": "AccessControlUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\AccessControlUpgradeable.sol:247"
+            },
+            {
+              "label": "userMap",
+              "offset": 0,
+              "slot": "202",
+              "type": "t_mapping(t_address,t_struct(User)4184_storage)",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:829"
+            },
+            {
+              "label": "tokenTotalStaked",
+              "offset": 0,
+              "slot": "203",
+              "type": "t_uint256",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:831"
+            },
+            {
+              "label": "stakingToken",
+              "offset": 0,
+              "slot": "204",
+              "type": "t_address",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:833"
+            },
+            {
+              "label": "rewardToken",
+              "offset": 0,
+              "slot": "205",
+              "type": "t_address",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:834"
+            },
+            {
+              "label": "lockTimePeriod",
+              "offset": 20,
+              "slot": "205",
+              "type": "t_uint48",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:846"
+            },
+            {
+              "label": "stakeRewardEndTime",
+              "offset": 26,
+              "slot": "205",
+              "type": "t_uint48",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:847"
+            },
+            {
+              "label": "stakeRewardFactor",
+              "offset": 0,
+              "slot": "206",
+              "type": "t_uint256",
+              "contract": "PolsStake",
+              "src": "contracts\\K4RallyTokenV2.sol:848"
+            },
+            {
+              "label": "_paused",
+              "offset": 0,
+              "slot": "207",
+              "type": "t_bool",
+              "contract": "PausableUpgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:173"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "208",
+              "type": "t_array(t_uint256)49_storage",
+              "contract": "PausableUpgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:241"
+            },
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "257",
+              "type": "t_address",
+              "contract": "OwnableUpgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:81"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "258",
+              "type": "t_array(t_uint256)49_storage",
+              "contract": "OwnableUpgradeable",
+              "src": "contracts\\K4RallyTokenV2.sol:141"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)45_storage": {
+              "label": "uint256[45]",
+              "numberOfBytes": "1440"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]",
+              "numberOfBytes": "1568"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_bytes32": {
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_struct(User)4184_storage)": {
+              "label": "mapping(address => struct PolsStake.User)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_bytes32,t_struct(RoleData)34_storage)": {
+              "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_struct(RoleData)34_storage": {
+              "label": "struct AccessControlUpgradeable.RoleData",
+              "members": [
+                {
+                  "label": "members",
+                  "type": "t_mapping(t_address,t_bool)",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "adminRole",
+                  "type": "t_bytes32",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_struct(User)4184_storage": {
+              "label": "struct PolsStake.User",
+              "members": [
+                {
+                  "label": "stakeTime",
+                  "type": "t_uint48",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "unlockTime",
+                  "type": "t_uint48",
+                  "offset": 6,
+                  "slot": "0"
+                },
+                {
+                  "label": "stakeAmount",
+                  "type": "t_uint160",
+                  "offset": 12,
+                  "slot": "0"
+                },
+                {
+                  "label": "accumulatedRewards",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint160": {
+              "label": "uint160",
+              "numberOfBytes": "20"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint48": {
+              "label": "uint48",
+              "numberOfBytes": "6"
+            },
+            "t_uint8": {
+              "label": "uint8",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    }
+  ]
+}
