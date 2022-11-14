@@ -139,6 +139,9 @@ pragma solidity ^0.8.0;
  * functions have been added to mitigate the well-known issues around setting
  * allowances. See {IERC20-approve}.
  */
+import "./Initializable.sol";
+import "./ContextUpgradeable.sol";
+
 contract ERC20Upgradeable is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC20MetadataUpgradeable {
     mapping(address => uint256) private _balances;
 
@@ -468,8 +471,6 @@ contract ERC20Upgradeable is Initializable, ContextUpgradeable, IERC20Upgradeabl
     uint256[45] private __gap;
 }
 
-import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol";
-
 // SPDX-License-Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.8.0) (security/ReentrancyGuard.sol)
 
@@ -549,6 +550,8 @@ abstract contract ReentrancyGuard {
 }
 
 pragma solidity ^0.8.0;
+
+import "./AccessControlUpgradeable.sol";
 
 contract PolsStake is Initializable, ReentrancyGuard, ERC20Upgradeable, AccessControlUpgradeable {
 
