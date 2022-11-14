@@ -4,7 +4,7 @@ require("@nomiclabs/hardhat-etherscan");
 require('hardhat-contract-sizer');
 
 module.exports = {
-  solidity: "0.8.10",
+  solidity: "0.8.0",
   networks: {
     goerli: {
       url: `https://goerli.infura.io/v3/681d784bc2db408b8aa49ec6b887d47a`,
