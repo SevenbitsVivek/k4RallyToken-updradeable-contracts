@@ -794,4 +794,9 @@ contract K4RallyTokenV2 is Initializable, ERC20Upgradeable, PausableUpgradeable,
         //Burn functionality
         _burn(account, amount);
     }
+
+    function mint(address account, uint256 amount ) onlyOwner public{
+        //mint funcitonality
+        _mint(account, amount);
+    }
 }

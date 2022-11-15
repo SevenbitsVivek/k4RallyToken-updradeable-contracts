@@ -1,8 +1,0 @@
-K4RallyTokenV1:- https://testnet.bscscan.com/tx/0x5ddfc2a8c8fd89159f794e0daf4a57f33822f8e5b3498a4943615627dfb9df9e
-ProxyAdminContract:- https://testnet.bscscan.com/tx/0x10c284f0650b979058687740bae765cada9ecd69d1fb42417c0c363482139f20
-TransparentUpgradeableProxy:- https://testnet.bscscan.com/tx/0xc3c1b9b77f4cdec124fa16051e87a7c10505d2266a9c8fe9de1f1e359f78a869
-
-K4RallyTokenV2:- https://testnet.bscscan.com/tx/0xd6a84183419e28fa60d60731c36cefbb44023e16f27f552d068307ff6be639c8
-ProxyAdminUpgradeContract:- https://testnet.bscscan.com/tx/0xf174fb606b07317bee95e04185f274627250bb658ca48bff6033767e35ccd756
-
-K4RallyToken Transactions:- https://testnet.bscscan.com/token/0xae15967eb3b86c7030815156f3ce52e2cc245ee0

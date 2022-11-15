@@ -12,12 +12,12 @@ module.exports = {
       gasPrice: 20000000000,
       accounts: ['c244b6e8ae351e71fa353515c55a4e0be82fb5bf7186c18419f89421805f74b7']
     },
-    mainnet: {
-      url: "https://bsc-dataseed1.defibit.io",
-      chainId: 56,
-      gasPrice: 20000000000,
-      accounts: [ADD_PRIVATE_KEY]
-    },
+    // mainnet: {
+    //   url: "https://bsc-dataseed1.defibit.io",
+    //   chainId: 56,
+    //   gasPrice: 20000000000,
+    //   accounts: [ADD_PRIVATE_KEY]
+    // },
   },
   etherscan: {
     apiKey: {
